@@ -6,4 +6,4 @@ There are two branches:
 
 More information can be found in: _
 
-*Trend*: coming soon.
+*Trend*: coming soon ...

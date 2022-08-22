@@ -1,5 +1,5 @@
 """
-This program is written to plot regs.
+This program is written to plot reg.
 """
 # imports python standard libraries
 import matplotlib.pyplot as plt
@@ -54,7 +54,6 @@ if __name__ == '__main__':
     fig.tight_layout()
     plt.savefig('coef.jpg', bbox_inches='tight')
     plt.close()
-    exit()
 
 
 

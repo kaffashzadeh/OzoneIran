@@ -1,9 +1,18 @@
-This repo contains a few scripts for the analysis of ozone over Iran.
+This repo holds several scripts for the analysis of ozone over Iran.
 
 There are two branches:
 
 *GlobalModel*: in which two models are evaluated using a new methodology.
 
-More information can be found in: _
+The package is a set of scripts to:
 
-*Trend*: coming soon ...
+- assess the models
+
+- plot the outputs
+
+- map the stations
+
+More information can be found in: [Assessment of Tropospheric Ozone Products from CAMS Reanalysis and CAMS Daily 
+Forecast using Observations over North and Northwest of Iran]()
+
+*_*

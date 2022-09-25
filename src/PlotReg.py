@@ -1,5 +1,5 @@
 """
-This program is written to plot reg.
+This program is written to plot regressions coefficients.
 """
 # imports python standard libraries
 import matplotlib.pyplot as plt
@@ -7,7 +7,7 @@ import matplotlib.gridspec as gridspec
 import matplotlib
 import numpy as np
 
-font = {'family':'sans Serif', 'weight':'normal', 'size':16} # 'DejaVu Sans'
+font = {'family':'sans Serif', 'weight':'normal', 'size':16}
 matplotlib.rc('font', **font)
 
 __author__='Najmeh Kaffashzadeh'
@@ -15,8 +15,10 @@ __author_email__ = 'najmeh.kaffashzadeh@gmail.com'
 
 
 if __name__ == '__main__':
+    # S
     vals1 = [[-0.39, 0.63, -0.08, 0.08], [-0.11, 0.71, 0.02, 0.04], [0.15, 0.81, 0.14, 0.05]]
     yerr1 = [[0.01, 0.02, 0.01, 0.01], [0.02, 0.02, 0.1, 0.1], [0.02,0.02,0.01,0.01]]
+    # M
     vals2 = [[-0.34,0.23,0.08,0.01],[0.25,0.21,-0.09,-0.23],[-0.16,0.09,0.05,0.3]]
     yerr2 = [[0.02,0.02,0.02,0.02],[0.02,0.02,0.02,0.02],[0.02,0.02,0.02,0.02]]
     fig, ax=plt.subplots(nrows=1,ncols=2, figsize=(13,5))
@@ -52,8 +54,22 @@ if __name__ == '__main__':
     ax[0].set_title('(a)')
     ax[1].set_title('(b)')
     fig.tight_layout()
-    plt.savefig('coef.jpg', bbox_inches='tight')
+    plt.savefig('fig4.jpg', bbox_inches='tight')
     plt.close()
+
+    # Calculate reg
+    # df1 = pd.read_csv('./../data/df_o3_ir_spec.csv', parse_dates=True, index_col=0, header=[0,1,2])
+    # df2 = pd.read_csv('./../data/8_dfr_spec.csv', parse_dates=True, index_col=0, header=[0, 1])
+    # df2 = pd.read_csv('./../data/8_dfa_spec.csv', parse_dates=True, index_col=0, header=[0, 1])
+    # df2 = pd.read_csv('./../data/dfo_pred_gp_spec.csv', parse_dates=True, index_col=0, header=[0, 1])
+    # sp = 'M'  # 'S'
+    # o3 = df1.loc[:, ('8', 'dfr', sp)]
+    # o3.rename('(O3, ' + sp + ')', inplace=True)
+    # df_pre = df2.loc[:, df2.columns.get_level_values(1) == sp]
+    # df3 = pd.concat([o3, df_pre], axis=1).dropna()
+    # self.mlr(predictant=df3['(O3, ' + sp + ')'],
+    #          predictors=df3[[('NOx (ppb)', sp), ('AT', sp),
+    #                          ('WS', sp), ('WD', sp)]]).summary()
 
 
 

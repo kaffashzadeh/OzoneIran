@@ -1,2 +1,7 @@
 .idea
+data
 data/*.csv
+*.jpg
+plots
+plots/*.jpg
+src/*.jpg*

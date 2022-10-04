@@ -1,4 +1,4 @@
-This branch *GlobalModel* holds several scripts for evaluating of ozone over Iran using a new methodology.
+This branch *GlobalModel* holds several scripts for evaluating of modeled ozone over Iran using a new methodology.
 
 The package is a set of scripts to:
 

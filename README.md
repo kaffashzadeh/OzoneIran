@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7142938.svg)](https://doi.org/10.5281/zenodo.7142938)
+
 This branch *GlobalModel* holds several scripts for evaluating of modeled ozone over Iran using a new methodology.
 
 The package is a set of scripts to:
